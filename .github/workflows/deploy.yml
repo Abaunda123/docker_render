@@ -20,6 +20,6 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
-          context: ./part3/3.2
+          context: ./part3/3.2/main
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/static-site:latest
